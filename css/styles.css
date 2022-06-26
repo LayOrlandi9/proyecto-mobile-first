@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(112, 28, 191);
+}
+
+
+h2{
+    color: rgb(109, 64, 152);
+}
+.nav{
+    font-weight: bold;
+}
+
+
+/* header  */
+.background{
+    background-color: rgb(240, 224, 255);
+}
+
+header div {
+    text-align: right;
+    margin-right: 10px;
+}
+header div a{
+    color:rgb(253, 173, 136);
+}
+header div a:hover{
+    font-weight: bolder;
+}
+header a {
+    text-decoration: none;
+}
+header a h1{
+    margin-bottom: 2vh;
+    background-color: rgb(154, 112, 194);
+    color: rgb(109, 64, 152);
+    font-size: 3rem;
+    border:solid;
+    width: 100%;
+}
+
+@media (min-width:768px){
+    header{
+        grid-template-columns: 3;
+    }
+
+}
+
+
+
+/* inicio */
+header hr{
+    margin-bottom: 2vh;
+}
+header nav{
+    background-color:rgb(154, 112, 194);
+    margin-bottom: 30px;
+}
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 5px;   
+    height: 30px;
+    padding: 5px;
+    
+}
+header nav ul li a{
+    color: rgb(253, 173, 136);
+    font-size: 0.77rem;
+
+}
+header nav ul li a:hover{
+    font-weight: bold;
+}
+@media (min-width: 768px){
+    header nav ul li a{
+        font-size: 1rem;
+    }
+}
+
+/* Main Registrarse */
+body main section form div{
+    padding: 5px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+body main section input{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* Main sucursales */
+body main section h1{
+    color: rgb(109, 64, 152);
+    text-align: center;
+}
+body main section h3{
+    color: rgb(109, 64, 152);
+    margin-left: 20px;
+}
+
+/* Main contacto*/
+body main section h2{
+    margin-left: 20px;
+}
+
+body main section form div textarea{
+    margin-left: 8px;
+}
+
+
+/* Main Nosotros */
+body main h1{
+    color: rgb(109, 64, 152);
+    text-align: center;
+    padding-bottom: 5vh;
+    font-size: 3rem;
+}
+main h1 section p{
+    margin-left: 10px;
+    margin: auto;
+    /* margin-bottom: 2vh; */
+}
+body main section h2{
+    margin-left: 20px;
+    margin-bottom: 2vh;
+    font-size: 2rem;
+}
+body main section h3{
+    margin-left: 20px;
+    margin-bottom: 2vh;
+    font-size: 2rem;
+}
+body main h3 p{
+    margin-bottom:2vh;
+}
+
+/* main index */
+.introduccion{
+    width: 100%;
+}
+.introduccion p{
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    
+}
+.introduccion h2{
+    margin-left: 20px;
+    margin-bottom: 2vh;
+    color: rgb(109, 64, 152);
+}
+.introduccion iframe{
+    
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5vh;
+}
+.categorias h3{
+    color: rgb(109, 64, 152);
+    padding-bottom: 2px;
+    font-size: 2rem;
+}
+
+.contenedor-categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-categorias img{
+    padding:20px;
+}
+
+main hr{
+    margin-top: 10px;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 768px) {
+    .contenedor-categorias{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .introduccion iframe{
+        width: 70%;
+    }
+
+}
+/* MAIN PRODUCTOS */
+main section h4{
+    margin-left: 20px;
+    margin-bottom: 2vh;
+    color: rgb(109, 64, 152);
+    font-size: 2rem;
+}
+main section aside{
+    padding-left: 20px;
+}
+
+/* pie de pagina */
+
+footer {
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+    color:rgb(109, 64, 152);
+}
+footer a{
+    text-decoration: none;
+    color:rgb(109, 64, 152)
+}
+
+.contenedor-redes i{
+    font-size: 2.5rem;
+}
+.contenedor-redes{
+    padding-bottom: 30px;
+    /* align-items: center; */
+}
+.contenedor-redes i{
+    color:rgb(253, 173, 136);
+}
+@media (min-width:768px){
+    .contenedor-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .contenedor-redes i{
+    padding: 10px;
+    }
+}
+
+
