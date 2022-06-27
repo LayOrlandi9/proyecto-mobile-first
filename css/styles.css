@@ -176,10 +176,13 @@ body main h3 p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* transition: all 1s linear 50ms; */
+    /* box-shadow:(20px, 20px, black); */
 }
 
 .contenedor-categorias img{
-    padding:20px;
+    /* padding:20px; */
+    box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
 }
 
 main hr{
@@ -230,6 +233,10 @@ footer a{
 }
 .contenedor-redes i{
     color:rgb(253, 173, 136);
+}
+.contenedor-redes li:hover{
+    transform: scale(1.10);
+
 }
 @media (min-width:768px){
     .contenedor-redes{
