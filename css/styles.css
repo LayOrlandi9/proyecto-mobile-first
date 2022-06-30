@@ -5,9 +5,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* .navbar {
+    background-color: rgb(240,224,255);
+} */
 ul, ol{
     list-style-type: none;
-}
+} */
 a{
     text-decoration: none;
     color:rgb(112, 28, 191);
@@ -17,6 +20,7 @@ a{
 h2{
     color: rgb(109, 64, 152);
 }
+
 .nav{
     font-weight: bold;
 }
@@ -49,13 +53,12 @@ header a h1{
     width: 100%;
 }
 
-@media (min-width:768px){
+/* @media (min-width:768px){
     header{
         grid-template-columns: 3;
     }
 
-}
-
+} */
 
 
 /* inicio */
@@ -64,7 +67,7 @@ header hr{
 }
 header nav{
     background-color:rgb(154, 112, 194);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 header nav ul li {
     display: inline-block;
@@ -176,14 +179,25 @@ body main h3 p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* transition: all 1s linear 50ms; */
-    /* box-shadow:(20px, 20px, black); */
+    transition: all 1s linear 50ms; 
+    box-shadow:(20px, 20px, black);
 }
 
 .contenedor-categorias img{
     /* padding:20px; */
     box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
 }
+
+.navbar-nav{
+    background-color: rgb(154, 112, 194);
+    padding: 8px;
+    color: rgb(253, 173, 136);
+
+}
+.nav-link{
+    color: rgb(253, 173, 136);
+}
+
 
 main hr{
     margin-top: 10px;
@@ -229,7 +243,7 @@ footer a{
 }
 .contenedor-redes{
     padding-bottom: 30px;
-    /* align-items: center; */
+    align-items: center;
 }
 .contenedor-redes i{
     color:rgb(253, 173, 136);
