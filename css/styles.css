@@ -5,14 +5,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* .navbar {
-    background-color: rgb(240,224,255);
-} */
 ul, ol{
     list-style-type: none;
-} */
+}
 a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color:rgb(112, 28, 191);
 }
 
@@ -77,14 +74,17 @@ header nav ul li {
     padding: 5px;
     
 }
+
 header nav ul li a{
     color: rgb(253, 173, 136);
     font-size: 0.77rem;
 
 }
+
 header nav ul li a:hover{
     font-weight: bold;
 }
+
 @media (min-width: 768px){
     header nav ul li a{
         font-size: 1rem;
@@ -97,6 +97,7 @@ body main section form div{
     margin-left: 8px;
     margin-bottom: 5px;
 }
+
 body main section input{
     margin-top: 5px;
     margin-left: 10px;
@@ -107,6 +108,7 @@ body main section h1{
     color: rgb(109, 64, 152);
     text-align: center;
 }
+
 body main section h3{
     color: rgb(109, 64, 152);
     margin-left: 20px;
@@ -152,23 +154,26 @@ body main h3 p{
 .introduccion{
     width: 100%;
 }
+
 .introduccion p{
-    margin: 20px;
+    /* margin: 20px; */
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    /* text-align: justify; */
     
 }
+
 .introduccion h2{
-    margin-left: 20px;
-    margin-bottom: 2vh;
+    /* margin-left: 20px;
+    margin-bottom: 2vh; */
     color: rgb(109, 64, 152);
 }
+
 .introduccion iframe{
-    
     width: 100%;
     padding: 5px;
     margin-bottom: 5vh;
 }
+
 .categorias h3{
     color: rgb(109, 64, 152);
     padding-bottom: 2px;
@@ -176,15 +181,16 @@ body main h3 p{
 }
 
 .contenedor-categorias{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     transition: all 1s linear 50ms; 
     box-shadow:(20px, 20px, black);
 }
 
+
 .contenedor-categorias img{
-    /* padding:20px; */
+    padding:20px;
     box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
 }
 
@@ -221,9 +227,9 @@ main section h4{
     color: rgb(109, 64, 152);
     font-size: 2rem;
 }
-main section aside{
+/* main section aside{
     padding-left: 20px;
-}
+} */
 
 /* pie de pagina */
 
@@ -240,14 +246,13 @@ footer a{
 
 .contenedor-redes i{
     font-size: 2.5rem;
-}
-.contenedor-redes{
-    padding-bottom: 30px;
-    align-items: center;
-}
-.contenedor-redes i{
     color:rgb(253, 173, 136);
 }
+/* .contenedor-redes{
+    padding-bottom: 30px;
+    align-items: center;
+} */
+
 .contenedor-redes li:hover{
     transform: scale(1.10);
 
@@ -262,5 +267,3 @@ footer a{
     padding: 10px;
     }
 }
-
-
