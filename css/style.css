@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(253, 173, 136);
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: rgb(109, 64, 152);
+}
+
+.nav {
+  font-weight: bold;
+}
+
+.background {
+  background-color: rgb(240, 224, 255);
+}
+
+header div {
+  text-align: right;
+  margin-right: 10px;
+}
+header div a:hover {
+  font-weight: bolder;
+}
+header a h1 {
+  margin-bottom: 2vh;
+  background-color: rgb(154, 112, 194);
+  color: rgb(109, 64, 152);
+  font-size: 3rem;
+  border: solid;
+  width: 100%;
+}
+header hr {
+  margin-bottom: 2vh;
+}
+header nav {
+  background-color: rgb(154, 112, 194);
+}
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 5px;
+  height: 30px;
+  padding: 5px;
+}
+header nav ul li a {
+  font-size: 0.77rem;
+}
+@media (min-width: 768px) {
+  header nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+.navbar-nav {
+  background-color: rgb(154, 112, 194);
+  padding: 8px;
+  color: rgb(253, 173, 136);
+}
+
+.nav-link {
+  color: rgb(253, 173, 136);
+}
+
+footer {
+  text-decoration: none;
+  text-align: center;
+  font-style: italic;
+  color: rgb(154, 112, 194);
+}
+footer a {
+  color: rgb(154, 112, 194);
+  text-decoration: none;
+}
+
+.contenedor-redes i {
+  font-size: 2.5rem;
+  color: rgb(253, 173, 136);
+  padding: 10px;
+}
+.contenedor-redes li:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 768px) {
+  .contenedor-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contenedor-introduccion p {
+  font-family: "Times New Roman", Times, serif;
+}
+.contenedor-introduccion iframe {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 5vh;
+}
+@media (min-width: 768px) {
+  .contenedor-introduccion iframe {
+    width: 70%;
+  }
+}
+.contenedor-categorias {
+  transition: all 1s linear 50ms;
+  box-shadow: 20px, 20px, black;
+}
+@media (min-width: 768px) {
+  .contenedor-categorias {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.contenedor-categorias img {
+  padding: 20px;
+  box-shadow: 10px 10px 15px 4px rgba(0, 0, 0, 0.75);
+}
+
+.contacto-info {
+  width: 320px;
+}
+.contacto-info-texto {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .contacto-info {
+    width: 600px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

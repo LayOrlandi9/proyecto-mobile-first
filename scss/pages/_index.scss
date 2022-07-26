@@ -1,0 +1,29 @@
+.contenedor {
+    &-introduccion {
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        iframe {
+            width: 100%;
+            padding: 3px;
+            margin-bottom: 5vh;
+            @media (min-width: 768px){
+                width: 70%;
+            }
+        }
+    }
+
+    &-categorias {
+        transition: all 1s linear 50ms;
+        box-shadow: (20px, 20px, black);
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        img{
+            padding:20px;
+            box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
+        }
+    }
+}

@@ -1,32 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-ul, ol{
-    list-style-type: none;
-}
-a{
-    /* text-decoration: none; */
-    color:rgb(112, 28, 191);
-}
 
 
-h2{
-    color: rgb(109, 64, 152);
-}
-
-.nav{
-    font-weight: bold;
-}
 
 
 /* header  */
-.background{
-    background-color: rgb(240, 224, 255);
-}
+
 
 header div {
     text-align: right;

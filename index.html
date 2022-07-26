@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   <title>Globos</title>
 </head>
@@ -60,23 +60,13 @@
         </div>
       </div>
     </nav>
-    <!-- fin -->
-    <!-- <nav>
-      <ul class="contenedor-item">
-        <li> <a href="./pages/nosotros.html"> Nosotros </a></li>
-        <li> <a href="./pages/productos.html"> Productos </a></li>
-        <li> <a href="./pages/sucursales.html"> Sucursales </a> </li>
-        <li> <a href="./pages/contacto.html"> Contacto </a> </li>
-
-      </ul>
-    </nav>  -->
   </header>
 
 
   <main class="container-fluid contenedor">
 
-    <section class="introduccion" data-aos="fade-right">
-      <div class="row mt-3 p-3">
+    <section class="contenedor-introduccion" data-aos="fade-right">
+      <div class="row mt-3 px-3">
         <div class="col-12 col-md-6">
           <p data-aos="fade-up"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis corporis soluta
             tempore nesciunt laboriosam modi! Quae perferendis deserunt quod itaque omnis sed repellat harum neque,
@@ -92,24 +82,23 @@
           allowfullscreen></iframe>
       </div>
     </section>
-    <section class="contenedor-categorias">
-      <h3 class="text-right" data-aos="fade-right"> Categorias </h3>
-
-      <!-- <div class="shadow"> -->
-        <div class="container">
-          <div class="row">
-            <div class="col order-last shadow">
-              <img src="./assets/img/navidad.jpg" alt="globos navidad" data-aos="fade-down" height="200px" width="200px">
-            </div>
-            <div class="col shadow">
-              <img src="./assets/img/flores.JPG" alt="globos flores" data-aos="fade-down" height="200px" width="200px">
-            </div>
-            <div class="col order-first shadow">
-              <img src="./assets/img/unicornios.png" alt="globos unicornios" data-aos="fade-down" height="200px"width="200px">
-            </div>
+    <section class="contenedor-categorias px-3">
+      <h2 class="text-right" data-aos="fade-right"> Categorias </h2>
+      <div class="container contenedor-categorias-productos">
+        <div class="row">
+          <div class="col order-last shadow">
+            <img src="./assets/img/navidad.jpg" alt="globos navidad" data-aos="fade-down" height="200px" width="200px">
+          </div>
+          <div class="col shadow">
+            <img src="./assets/img/flores.JPG" alt="globos flores" data-aos="fade-down" height="200px" width="200px">
+          </div>
+          <div class="col order-first shadow">
+            <img src="./assets/img/unicornios.png" alt="globos unicornios" data-aos="fade-down" height="200px"
+              width="200px">
           </div>
         </div>
-      <!-- </div> -->
+      </div>
+
     </section>
     <hr>
   </main>
@@ -121,9 +110,11 @@
           <div class="d-flex justify-content-center">
             <li> <a href="https://es-la.facebook.com/" target="_blank"> <i class="bi-facebook"></i> </a> </li>
 
-            <li> <a href="https://api.whatsapp.com/send?phone=34123456789" target="_blank"> <i class="bi-whatsapp"></i></a> </li>
+            <li> <a href="https://api.whatsapp.com/send?phone=34123456789" target="_blank"> <i
+                  class="bi-whatsapp"></i></a> </li>
 
-            <li> <a href="https://www.instagram.com/alcotillon/" target="_blank"> <i class="bi-instagram"></i> </a> </li>
+            <li> <a href="https://www.instagram.com/alcotillon/" target="_blank"> <i class="bi-instagram"></i> </a>
+            </li>
           </div>
         </ul>
       </div>
@@ -135,9 +126,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <!-- <script>
-    AOS.init();
-  </script> -->
+
 
 </body>
 

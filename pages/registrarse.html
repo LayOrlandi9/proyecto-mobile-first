@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="../assets/img/logo.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title> Globos </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="../assets/img/logo.JPG" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title> Globos </title>
 </head>
+
 <body class="background">
   <header>
     <div>
-      <a class="nav" href="./registrarse.html"> Registrarse </a> 
+      <a class="nav" href="./registrarse.html"> Registrarse </a>
     </div>
-      <a href="../index.html"> <h1> GLOBOS </h1></a>
+    <a href="../index.html">
+      <h1> GLOBOS </h1>
+    </a>
     <hr>
-    
 
 
-    <nav>
-      <ul>  
-        <li> <a href="./nosotros.html"> Nosotros </a></li>
-        <li> <a href="./productos.html"> Productos </a></li>
-        <li> <a href="./sucursales.html"> Sucursales </a> </li>
-        <li> <a href="./contacto.html"> Contacto </a> </li>
-        <li> <a href="../index.html"> Inicio </a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg border-bottom border-secondary">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand d-flex flex-column align-items-center" href="./index.html"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"> Inicio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sucursales.html">Sucursales</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./productos.html"> Productos </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-  </header> 
+
+  </header>
 
   <main>
     <section>
-      <h2> Registrarse </h2>
+      <h2 class="m-3"> Registrarse </h2>
 
-      <form> 
-        <div>
-          <label for="nombre"> Nombre </label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      <form action="GET" class="d-flex flex-column align-items-center">
+        <div class="mb-3 contacto-info">
+          <label class="d-none" for="nombre"> Nombre </label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3 contacto-info">
+          <label class="d-none" for="apellido"> </label>
+          <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+        </div>
+        <div class="mb-3 contacto-info">
+          <label class="d-none" for="telefono"> </label>
+          <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="+5493415146989" required>
+        </div>
+        <div class="mb-3 contacto-info">
+          <label class="d-none" for="email"> </label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="mb-3 contacto-info">
+          <label class="d-none" for="contraseña"> Contraseña</label>
+          <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+        </div>
+        <div class="mb-3 contacto-info">
+          <label class="d-none" for="empresa"> Empresa </label>
+          <input type="text" class="form-control" name="empresa" id="empresa" placeholder="Empresa">
         </div>
         <div>
-          <label for="apellido"> Apellido </label>
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+          <button class="btn shadow boton" type="submit"> Cargar </button>
+          <button class="btn shadow boton" type="reset">Reset </button>
         </div>
-        <div>
-          <label for="telefono"> Telefono </label>
-            <input type="tel" name="telefono" id="telefono" placeholder="+5493415146989" required>
-        </div>
-        <div>
-          <label for="email"> Email </label>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-        </div>
-        <div>
-          <label for="contraseña"> Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
-        </div>
-        <div>
-          <label for="empresa"> Empresa </label>
-            <input type="text" name="empresa" id="empresa" placeholder="Empresa" >
-        </div>
-        <input type="submit" value="Cargar">
-        <input type="reset" value="Reset">
-
       </form>
 
     </section>
     <hr>
 
   </main>
+  <footer class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+        <ul class="contenedor-redes">
+          <div class="d-flex justify-content-center">
+            <li> <a href="https://es-la.facebook.com/" target="_blank"> <i class="bi-facebook"></i> </a> </li>
 
-    
-  <footer>
-    <ul class="contenedor-redes">
-      <li> <a href="https://es-la.facebook.com/" target="_blank"> <i class="bi-facebook"></i> </a>  </li>
-          
-      <li> <a href="https://api.whatsapp.com/send?phone=34123456789" target="_blank"> <i class="bi-whatsapp"></i></a> </li>
-          
-      <li> <a href="https://www.instagram.com/alcotillon/" target="_blank"> <i class="bi-instagram"></i> </a> </li>
-    </ul>
+            <li> <a href="https://api.whatsapp.com/send?phone=34123456789" target="_blank"> <i
+                  class="bi-whatsapp"></i></a> </li>
 
+            <li> <a href="https://www.instagram.com/alcotillon/" target="_blank"> <i class="bi-instagram"></i> </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
     <a href="mailto:globos@gmail.com"> globos@gmail.com </a>
-    <p>  Todos los derechos reservados </p>
+    <p> Todos los derechos reservados </p>
+
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
 
 </body>
+
 </html>
