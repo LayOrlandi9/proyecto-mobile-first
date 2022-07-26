@@ -1,3 +1,15 @@
+.c-instagram:hover {
+  color: white;
+}
+
+.c-whatsapp:hover {
+  color: green;
+}
+
+.c-facebook:hover {
+  color: blue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: rgb(109, 64, 152);
 }
 
@@ -137,6 +149,23 @@ footer a {
 @media (min-width: 768px) {
   .contacto-info {
     width: 600px;
+  }
+}
+
+.sucursales iframe {
+  width: 400px;
+}
+
+.globos-grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.globos-grilla img {
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .globos-grilla {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

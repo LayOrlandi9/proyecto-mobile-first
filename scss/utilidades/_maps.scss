@@ -1,0 +1,13 @@
+$redes: (
+    instagram: white,
+    whatsapp: green,
+    facebook: blue,
+
+);
+
+@each $red, $color in $redes {
+    .c-#{$red}:hover{
+        color:$color;
+    }
+    
+}
