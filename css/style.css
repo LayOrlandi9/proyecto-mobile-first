@@ -135,9 +135,32 @@ footer a {
     justify-content: space-around;
   }
 }
+.contenedor-categorias-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-categorias-productos div {
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .contenedor-categorias-productos {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .contenedor-categorias img {
   padding: 20px;
   box-shadow: 10px 10px 15px 4px rgba(0, 0, 0, 0.75);
+  height: 200px;
+  width: 200px;
+}
+@media (min-width: 1060px) {
+  .contenedor-categorias img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .contacto-info {
@@ -158,12 +181,28 @@ footer a {
 
 .globos-grilla {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
 }
 .globos-grilla img {
-  padding: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
-@media (min-width: 768px) {
+.globos-grilla-card {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+@media (min-width: 680px) {
+  .globos-grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1090px) {
   .globos-grilla {
     grid-template-columns: repeat(4, 1fr);
   }
