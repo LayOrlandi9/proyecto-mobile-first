@@ -21,9 +21,28 @@
             flex-direction: row;
             justify-content: space-around;
         }
+        &-productos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                padding: 5px;
+            }
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
         img{
             padding:20px;
             box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.75);
+            height: 200px;
+            width: 200px;
+            @media (min-width: 1060px) {
+                height: 300px;
+                width: 300px;
+            }
         }
     }
 }
